@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рецепты | Bite & Delight</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./scripts.js" defer></script>
+</head>
+<body class="bg-gray-50 font-sans">
+    <header class="bg-amber-600 text-white shadow-md">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <a href="./index.html" class="flex items-center">
+                        <i class="fas fa-utensils text-3xl mr-3"></i>
+                        <h1 class="text-2xl font-bold">Bite & Delight</h1>
+                    </a>
+                </div>
+                <nav>
+                    <ul class="flex flex-col md:flex-row md:space-x-6 space-y-4 md:space-y-0 items-center">
+                        <li>
+                            <a href="./index.html" class="tab-btn w-full md:w-auto text-center px-3 py-2 rounded-lg hover:bg-amber-700 transition">
+                                Главная
+                            </a>
+                        </li>
+                        <li>
+                            <button class="tab-btn w-full md:w-auto text-center px-3 py-2 rounded-lg bg-amber-700 transition active">
+                                Рецепты
+                            </button>
+                        </li>
+                        <li>
+                            <a href="./register.html" class="tab-btn w-full md:w-auto text-center px-3 py-2 rounded-lg hover:bg-amber-700 transition">
+                                Регистрация
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto px-4 py-8 min-h-screen mb-0">
+        <h2 class="text-3xl font-bold text-amber-700 mb-8">Наши рецепты</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Recipe 1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="dishes/borsh.jpg" 
+                     alt="Борщ" 
+                     class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Борщ</h3>
+                    <p class="text-gray-600 mb-4">Классический украинский борщ с мясом и свеклой - сытное и ароматное первое блюдо.</p>
+                    <button data-target="recipe1" onclick="toggleRecipe(this)" class="btn-hover bg-amber-600 text-white px-4 py-2 rounded-lg font-medium">
+                        Подробнее <i class="fas fa-chevron-down ml-1"></i>
+                    </button>
+                    <div id="recipe1" class="recipe-details mt-4">
+                        <h4 class="font-bold text-gray-800 mb-2">Ингредиенты:</h4>
+                        <ul class="list-disc pl-5 mb-4 text-gray-700">
+                            <li>500 г говядины</li>
+                            <li>2 свеклы</li>
+                            <li>2 моркови</li>
+                            <li>3 картофелины</li>
+                            <li>1 луковица</li>
+                            <li>1/4 капусты</li>
+                            <li>2 ст.л. томатной пасты</li>
+                            <li>Соль, перец, лавровый лист</li>
+                            <li>Сметана и зелень для подачи</li>
+                        </ul>
+                        <h4 class="font-bold text-gray-800 mb-2">Приготовление:</h4>
+                        <ol class="list-decimal pl-5 text-gray-700">
+                            <li>Мясо залить водой и варить 1.5 часа.</li>
+                            <li>Овощи нарезать, свеклу и морковь обжарить с луком.</li>
+                            <li>Добавить томатную пасту и тушить 5 минут.</li>
+                            <li>В бульон добавить картофель, через 10 минут - капусту.</li>
+                            <li>Через 10 минут добавить зажарку, соль, перец, лавровый лист.</li>
+                            <li>Варить еще 10 минут, дать настояться.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Recipe 2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="dishes/chiken-pasta.jpeg" 
+                     alt="Паста с курицей" 
+                     class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Паста с курицей</h3>
+                    <p class="text-gray-600 mb-4">Нежная паста с куриной грудкой в сливочном соусе - идеальный ужин за 30 минут.</p>
+                    <button data-target="recipe2" onclick="toggleRecipe(this)" class="btn-hover bg-amber-600 text-white px-4 py-2 rounded-lg font-medium">
+                        Подробнее <i class="fas fa-chevron-down ml-1"></i>
+                    </button>
+                    <div id="recipe2" class="recipe-details mt-4">
+                        <h4 class="font-bold text-gray-800 mb-2">Ингредиенты:</h4>
+                        <ul class="list-disc pl-5 mb-4 text-gray-700">
+                            <li>300 г пасты (пенне или феттучини)</li>
+                            <li>300 г куриного филе</li>
+                            <li>200 мл сливок 20%</li>
+                            <li>1 луковица</li>
+                            <li>2 зубчика чеснока</li>
+                            <li>50 г пармезана</li>
+                            <li>2 ст.л. оливкового масла</li>
+                            <li>Соль, перец, итальянские травы</li>
+                        </ul>
+                        <h4 class="font-bold text-gray-800 mb-2">Приготовление:</h4>
+                        <ol class="list-decimal pl-5 text-gray-700">
+                            <li>Пасту отварить в подсоленной воде до al dente.</li>
+                            <li>Курицу нарезать кубиками, обжарить до золотистой корочки.</li>
+                            <li>Добавить мелко нарезанный лук и чеснок, обжарить 2 минуты.</li>
+                            <li>Влить сливки, добавить специи, тушить 5 минут.</li>
+                            <li>Смешать пасту с соусом, посыпать тертым пармезаном.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Recipe 3 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="dishes/chocolate-pie.jpeg" 
+                     alt="Шоколадный торт" 
+                     class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Шоколадный торт</h3>
+                    <p class="text-gray-600 mb-4">Нежнейший шоколадный торт с насыщенным вкусом - идеальный десерт для особых случаев.</p>
+                    <button data-target="recipe3" onclick="toggleRecipe(this)" class="btn-hover bg-amber-600 text-white px-4 py-2 rounded-lg font-medium">
+                        Подробнее <i class="fas fa-chevron-down ml-1"></i>
+                    </button>
+                    <div id="recipe3" class="recipe-details mt-4">
+                        <h4 class="font-bold text-gray-800 mb-2">Ингредиенты:</h4>
+                        <ul class="list-disc pl-5 mb-4 text-gray-700">
+                            <li>200 г темного шоколада</li>
+                            <li>200 г сливочного масла</li>
+                            <li>4 яйца</li>
+                            <li>150 г сахара</li>
+                            <li>100 г муки</li>
+                            <li>1 ч.л. разрыхлителя</li>
+                            <li>Щепотка соли</li>
+                            <li>Какао-порошок для украшения</li>
+                        </ul>
+                        <h4 class="font-bold text-gray-800 mb-2">Приготовление:</h4>
+                        <ol class="list-decimal pl-5 text-gray-700">
+                            <li>Шоколад и масло растопить на водяной бане, остудить.</li>
+                            <li>Яйца взбить с сахаром до пышной массы.</li>
+                            <li>Аккуратно смешать шоколадную массу с яичной.</li>
+                            <li>Добавить просеянную муку с разрыхлителем, перемешать.</li>
+                            <li>Вылить тесто в форму, выпекать 25-30 минут при 180°C.</li>
+                            <li>Остудить, посыпать какао-порошком.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-gray-400">© 2025 Кулинарный блог. Все права защищены.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="./404.html" class="social-icon text-gray-400 hover:text-white">
+                        <i class="fab fa-facebook-f text-xl"></i>
+                    </a>
+                    <a href="./404.html" class="social-icon text-gray-400 hover:text-white">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="./404.html" class="social-icon text-gray-400 hover:text-white">
+                        <i class="fab fa-pinterest-p text-xl"></i>
+                    </a>
+                    <a href="./404.html" class="social-icon text-gray-400 hover:text-white">
+                        <i class="fab fa-youtube text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

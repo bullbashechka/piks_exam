@@ -1,0 +1,96 @@
+<!DOCTYPE html> <!-- Указывает, что это HTML5-документ -->
+<html lang="ru"> <!-- Устанавливает основной язык документа — русский -->
+<head>
+    <meta charset="UTF-8"> <!-- Устанавливает кодировку символов — UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Делает сайт адаптивным на мобильных устройствах -->
+    <title>Борщ | Bite & Delight</title> <!-- Заголовок страницы во вкладке браузера -->
+
+    <!-- Подключение Tailwind CSS через CDN (утилитарный CSS-фреймворк) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Подключение Font Awesome для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Подключение пользовательских стилей -->
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="bg-gray-50 font-sans"> <!-- Светлый фон и шрифт без засечек для всего тела документа -->
+
+    <!-- Шапка сайта -->
+    <header class="bg-amber-600 text-white shadow-md">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex items-center justify-between"> <!-- Горизонтальное выравнивание элементов шапки -->
+                <!-- Логотип с ссылкой на главную -->
+                <a href="../index.html" class="flex items-center">
+                    <i class="fas fa-utensils text-3xl mr-3"></i> <!-- Иконка "вилки и ножа" -->
+                    <h1 class="text-2xl font-bold">Bite & Delight</h1> <!-- Название сайта -->
+                </a>
+                <!-- Кнопка возврата к списку рецептов -->
+                <a href="../recipes.html" class="flex items-center bg-amber-700 hover:bg-amber-800 px-4 py-2 rounded-lg transition-colors">
+                    <i class="fas fa-arrow-left mr-2"></i> <!-- Иконка стрелки назад -->
+                    Вернуться к рецептам
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент страницы -->
+    <main class="container mx-auto px-4 py-8">
+        <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden"> <!-- Центрированный контейнер с белым фоном и тенью -->
+            
+            <!-- Картинка блюда -->
+            <img src="../dishes/borsh.jpg" alt="Борщ" class="w-full h-96 object-cover"> <!-- Изображение борща -->
+
+            <div class="p-8"> <!-- Контент внутри карточки -->
+                <h1 class="text-3xl font-bold text-gray-800 mb-4">Борщ</h1> <!-- Заголовок -->
+                <p class="text-gray-600 mb-6">Краткое описание блюда.</p>
+
+                <!-- Характеристики блюда: время, порции, сложность -->
+                <div class="grid grid-cols-3 gap-4 mb-8">
+                    <div class="text-center p-4 bg-gray-50 rounded">
+                        <p class="font-bold">Время приготовления</p>
+                        <p>2 часа</p>
+                    </div>
+                    <div class="text-center p-4 bg-gray-50 rounded">
+                        <p class="font-bold">Порции</p>
+                        <p>6-8 порций</p>
+                    </div>
+                    <div class="text-center p-4 bg-gray-50 rounded">
+                        <p class="font-bold">Сложность</p>
+                        <p>Средняя</p>
+                    </div>
+                </div>
+
+                <!-- Список ингредиентов -->
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Ингредиенты</h2>
+                    <ul class="list-disc pl-5 text-gray-700"> <!-- Маркированный список -->
+                        <li>500 г говядины</li>
+                        <li>2 свеклы</li>
+                        <li>2 моркови</li>
+                        <li>3 картофелины</li>
+                        <li>1 луковица</li>
+                        <li>1/4 капусты</li>
+                        <li>2 ст.л. томатной пасты</li>
+                        <li>Соль, перец, лавровый лист</li>
+                        <li>Сметана и зелень для подачи</li>
+                    </ul>
+                </div>
+
+                <!-- Пошаговая инструкция приготовления -->
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Приготовление</h2>
+                    <ol class="list-decimal pl-5 text-gray-700"> <!-- Нумерованный список -->
+                        <li class="mb-2">Мясо залить водой и варить 1.5 часа.</li>
+                        <li class="mb-2">Овощи нарезать, свеклу и морковь обжарить с луком.</li>
+                        <li class="mb-2">Добавить томатную пасту и тушить 5 минут.</li>
+                        <li class="mb-2">В бульон добавить картофель, через 10 минут - капусту.</li>
+                        <li class="mb-2">Через 10 минут добавить зажарку, соль, перец, лавровый лист.</li>
+                        <li class="mb-2">Варить еще 10 минут, дать настояться.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

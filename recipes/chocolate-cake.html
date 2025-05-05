@@ -1,0 +1,99 @@
+<!DOCTYPE html> <!-- Указывает, что используется HTML5 -->
+<html lang="ru"> <!-- Основной язык страницы — русский -->
+<head>
+    <meta charset="UTF-8"> <!-- Кодировка символов: UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Адаптивность на мобильных устройствах -->
+    <title>Шоколадный торт | Bite & Delight</title> <!-- Заголовок страницы во вкладке браузера -->
+
+    <!-- Подключение Tailwind CSS для удобного стилизования через классы -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Подключение Font Awesome для отображения иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Подключение внешнего CSS-файла со своими стилями -->
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="bg-gray-50 font-sans"> <!-- Светло-серый фон, шрифт без засечек -->
+
+    <!-- Шапка сайта -->
+    <header class="bg-amber-600 text-white shadow-md">
+        <div class="container mx-auto px-4 py-6"> <!-- Центрирование и отступы -->
+            <div class="flex items-center justify-between"> <!-- Горизонтальное распределение логотипа и кнопки -->
+                
+                <!-- Логотип и ссылка на главную страницу -->
+                <a href="../index.html" class="flex items-center">
+                    <i class="fas fa-utensils text-3xl mr-3"></i> <!-- Иконка "вилки и ножа" -->
+                    <h1 class="text-2xl font-bold">Bite & Delight</h1>
+                </a>
+
+                <!-- Кнопка возврата к списку рецептов -->
+                <a href="../recipes.html" class="flex items-center bg-amber-700 hover:bg-amber-800 px-4 py-2 rounded-lg transition-colors">
+                    <i class="fas fa-arrow-left mr-2"></i> <!-- Иконка стрелки назад -->
+                    Вернуться к рецептам
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="container mx-auto px-4 py-8"> <!-- Центрированный контейнер с отступами -->
+        <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden"> <!-- Карточка с тенью и скруглениями -->
+            
+            <!-- Изображение блюда -->
+            <img src="../dishes/chocolate-pie.jpeg" alt="Шоколадный торт" class="w-full h-96 object-cover">
+
+            <!-- Контейнер с текстом -->
+            <div class="p-8">
+                <!-- Заголовок и описание -->
+                <h1 class="text-3xl font-bold text-gray-800 mb-4">Шоколадный торт</h1>
+                <p class="text-gray-600 mb-6">Нежнейший шоколадный торт с насыщенным вкусом - идеальный десерт для особых случаев.</p>
+                
+                <!-- Блок характеристик блюда -->
+                <div class="grid grid-cols-3 gap-4 mb-8"> <!-- Три столбца с отступами -->
+                    <div class="text-center p-4 bg-gray-50 rounded">
+                        <p class="font-bold">Время приготовления</p>
+                        <p>1 час</p>
+                    </div>
+                    <div class="text-center p-4 bg-gray-50 rounded">
+                        <p class="font-bold">Порции</p>
+                        <p>8-10 порций</p>
+                    </div>
+                    <div class="text-center p-4 bg-gray-50 rounded">
+                        <p class="font-bold">Сложность</p>
+                        <p>Средняя</p>
+                    </div>
+                </div>
+
+                <!-- Список ингредиентов -->
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Ингредиенты</h2>
+                    <ul class="list-disc pl-5 text-gray-700"> <!-- Маркированный список с отступом -->
+                        <li>200 г темного шоколада</li>
+                        <li>200 г сливочного масла</li>
+                        <li>4 яйца</li>
+                        <li>150 г сахара</li>
+                        <li>100 г муки</li>
+                        <li>1 ч.л. разрыхлителя</li>
+                        <li>Щепотка соли</li>
+                        <li>Какао-порошок для украшения</li>
+                    </ul>
+                </div>
+
+                <!-- Пошаговая инструкция -->
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Приготовление</h2>
+                    <ol class="list-decimal pl-5 text-gray-700"> <!-- Нумерованный список -->
+                        <li class="mb-2">Шоколад и масло растопить на водяной бане, остудить.</li>
+                        <li class="mb-2">Яйца взбить с сахаром до пышной массы.</li>
+                        <li class="mb-2">Аккуратно смешать шоколадную массу с яичной.</li>
+                        <li class="mb-2">Добавить просеянную муку с разрыхлителем, перемешать.</li>
+                        <li class="mb-2">Вылить тесто в форму, выпекать 25-30 минут при 180°C.</li>
+                        <li class="mb-2">Остудить, посыпать какао-порошком.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Установка кодировки и адаптивность под мобильные устройства -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Заголовок страницы -->
+    <title>Рецепты | Bite & Delight</title>
+
+    <!-- Подключение Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Подключение Font Awesome для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Подключение собственного CSS -->
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- Подключение JavaScript-логики -->
+    <script src="./scripts.js" defer></script>
+</head>
+<body class="bg-gray-50 font-sans">
+    
+    <!-- Шапка сайта -->
+    <header class="bg-amber-600 text-white shadow-md">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                
+                <!-- Логотип и название блога -->
+                <div class="flex items-center mb-4 md:mb-0">
+                    <a href="./index.html" class="flex items-center">
+                        <i class="fas fa-utensils text-3xl mr-3"></i>
+                        <h1 class="text-2xl font-bold">Bite & Delight</h1>
+                    </a>
+                </div>
+
+                <!-- Навигация -->
+                <nav>
+                    <ul class="flex flex-col md:flex-row md:space-x-6 space-y-4 md:space-y-0 items-center">
+                        <li>
+                            <a href="./index.html" class="tab-btn w-full md:w-auto text-center px-3 py-2 rounded-lg hover:bg-amber-700 transition">
+                                Главная
+                            </a>
+                        </li>
+                        <li>
+                            <!-- Активная вкладка Рецепты -->
+                            <button class="tab-btn w-full md:w-auto text-center px-3 py-2 rounded-lg bg-amber-700 transition active">
+                                Рецепты
+                            </button>
+                        </li>
+                        <li>
+                            <a href="./register.html" class="tab-btn w-full md:w-auto text-center px-3 py-2 rounded-lg hover:bg-amber-700 transition">
+                                Регистрация
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент страницы -->
+    <main class="container mx-auto px-4 py-8 min-h-screen mb-0">
+        
+        <!-- Заголовок раздела рецептов -->
+        <h2 class="text-3xl font-bold text-amber-700 mb-8">Наши рецепты</h2>
+
+        <!-- Сетка карточек рецептов -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <!-- Карточка рецепта 1: Борщ -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="dishes/borsh.jpg" 
+                     alt="Борщ" 
+                     class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Борщ</h3>
+                    <p class="text-gray-600 mb-4">Классический украинский борщ с мясом и свеклой - сытное и ароматное первое блюдо.</p>
+                    <a href="recipes/borsch.html" class="btn-hover inline-block bg-amber-600 text-white px-4 py-2 rounded-lg font-medium">
+                        Смотреть рецепт <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Карточка рецепта 2: Паста с курицей -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="dishes/chiken-pasta.jpeg" 
+                     alt="Паста с курицей" 
+                     class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Паста с курицей</h3>
+                    <p class="text-gray-600 mb-4">Нежная паста с куриной грудкой в сливочном соусе - идеальный ужин за 30 минут.</p>
+                    <a href="recipes/pasta.html" class="btn-hover inline-block bg-amber-600 text-white px-4 py-2 rounded-lg font-medium">
+                        Смотреть рецепт <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Карточка рецепта 3: Шоколадный торт -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="dishes/chocolate-pie.jpeg" 
+                     alt="Шоколадный торт" 
+                     class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Шоколадный торт</h3>
+                    <p class="text-gray-600 mb-4">Нежнейший шоколадный торт с насыщенным вкусом - идеальный десерт для особых случаев.</p>
+                    <a href="recipes/chocolate-cake.html" class="btn-hover inline-block bg-amber-600 text-white px-4 py-2 rounded-lg font-medium">
+                        Смотреть рецепт <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                
+                <!-- Авторские права -->
+                <div class="mb-4 md:mb-0">
+                    <p class="text-gray-400">© 2025 Кулинарный блог. Все права защищены.</p>
+                </div>
+
+                <!-- Социальные сети -->
+                <div class="flex space-x-6">
+                    <a href="./404.html" class="social-icon text-gray-400 hover:text-white">
+                        <i class="fab fa-facebook-f text-xl"></i>
+                    </a>
+                    <a href="./404.html" class="social-icon text-gray-400 hover:text-white">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="./404.html" class="social-icon text-gray-400 hover:text-white">
+                        <i class="fab fa-pinterest-p text-xl"></i>
+                    </a>
+                    <a href="./404.html" class="social-icon text-gray-400 hover:text-white">
+                        <i class="fab fa-youtube text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

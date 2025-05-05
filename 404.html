@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!-- Обозначает, что используется HTML5 -->
+<html lang="ru"> <!-- Начало HTML-документа. Атрибут lang="ru" указывает, что язык контента — русский -->
+<head>
+    <meta charset="UTF-8"> <!-- Устанавливает кодировку символов на UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Для адаптивности на мобильных устройствах -->
+    <title>Ошибка 404 | Bite & Delight</title> <!-- Заголовок страницы в браузере -->
+
+    <!-- Подключение Tailwind CSS через CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Подключение иконок Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Подключение пользовательских стилей -->
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- Подключение пользовательских скриптов с отложенной загрузкой -->
+    <script src="./scripts.js" defer></script>
+</head>
+<body class="bg-gray-50 font-sans"> <!-- Светлый фон и шрифт без засечек -->
+
+    <!-- Шапка сайта -->
+    <header class="bg-amber-600 text-white shadow-md"> <!-- Янтарный фон, белый текст, тень -->
+        <div class="container mx-auto px-4 py-6"> <!-- Центрированный контейнер с отступами -->
+            <div class="flex items-center"> <!-- Горизонтальное выравнивание элементов -->
+                <a href="index.html" class="flex items-center"> <!-- Ссылка на главную -->
+                    <i class="fas fa-utensils text-3xl mr-3"></i> <!-- Иконка "вилки и ножа" -->
+                    <h1 class="text-2xl font-bold">Bite & Delight</h1> <!-- Название сайта -->
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент страницы 404 -->
+    <main class="container mx-auto px-4 py-8 min-h-screen flex flex-col items-center justify-center">
+        <h1 class="text-6xl font-bold text-amber-700 mb-4">404</h1> <!-- Крупный заголовок ошибки -->
+        <p class="text-gray-700 text-lg mb-6">Страница не найдена. Возможно, вы перешли по неверной ссылке.</p> <!-- Сообщение -->
+        <a href="./index.html" class="btn-hover bg-amber-600 text-white py-3 px-6 rounded-lg font-bold hover:bg-amber-700 transition">
+            Вернуться на главную <!-- Кнопка для возврата на главную -->
+        </a>
+    </main>
+
+    <!-- Нижняя часть сайта (подвал) -->
+    <footer class="bg-gray-800 text-white py-8"> <!-- Тёмный фон, белый текст -->
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                
+                <!-- Копирайт -->
+                <div class="mb-4 md:mb-0">
+                    <p class="text-gray-400">© 2025 Кулинарный блог. Все права защищены.</p>
+                </div>
+                
+                <!-- Иконки социальных сетей -->
+                <div class="flex space-x-6">
+                    <!-- Сейчас все ссылки ведут на эту же страницу 404 -->
+                    <a href="./404.html" class="social-icon text-gray-400 hover:text-white">
+                        <i class="fab fa-facebook-f text-xl"></i> <!-- Иконка Facebook -->
+                    </a>
+                    <a href="./404.html" class="social-icon text-gray-400 hover:text-white">
+                        <i class="fab fa-instagram text-xl"></i> <!-- Иконка Instagram -->
+                    </a>
+                    <a href="./404.html" class="social-icon text-gray-400 hover:text-white">
+                        <i class="fab fa-pinterest-p text-xl"></i> <!-- Иконка Pinterest -->
+                    </a>
+                    <a href="./404.html" class="social-icon text-gray-400 hover:text-white">
+                        <i class="fab fa-youtube text-xl"></i> <!-- Иконка YouTube -->
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

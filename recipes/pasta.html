@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- Указывает браузеру, что это HTML5 документ -->
+<html lang="ru">
+<!-- Устанавливает язык страницы как русский -->
+<head>
+    <meta charset="UTF-8">
+    <!-- Устанавливает кодировку страницы -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Обеспечивает адаптивную верстку на мобильных устройствах -->
+    <title>Паста с курицей | Bite & Delight</title>
+    <!-- Заголовок страницы во вкладке браузера -->
+
+    <!-- Подключение Tailwind CSS через CDN для удобной стилизации -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Подключение иконок Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Подключение собственного CSS-файла -->
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="bg-gray-50 font-sans">
+<!-- Основное тело страницы с фоновым цветом и шрифтом sans-serif -->
+
+    <!-- Хедер (шапка сайта) -->
+    <header class="bg-amber-600 text-white shadow-md">
+        <div class="container mx-auto px-4 py-6">
+            <!-- Контейнер с авто-шириной, центрированием и отступами -->
+
+            <div class="flex items-center justify-between">
+                <!-- Горизонтальное выравнивание логотипа и кнопки "назад" -->
+
+                <!-- Логотип и название сайта -->
+                <a href="../index.html" class="flex items-center">
+                    <i class="fas fa-utensils text-3xl mr-3"></i>
+                    <h1 class="text-2xl font-bold">Bite & Delight</h1>
+                </a>
+
+                <!-- Кнопка "Вернуться к рецептам" -->
+                <a href="../recipes.html" class="flex items-center bg-amber-700 hover:bg-amber-800 px-4 py-2 rounded-lg transition-colors">
+                    <i class="fas fa-arrow-left mr-2"></i>
+                    Вернуться к рецептам
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент страницы -->
+    <main class="container mx-auto px-4 py-8">
+        <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+            <!-- Карточка рецепта: белый фон, закругленные углы и тень -->
+
+            <!-- Картинка блюда -->
+            <img src="../dishes/chiken-pasta.jpeg" alt="Паста с курицей" class="w-full h-96 object-cover">
+
+            <!-- Контент карточки -->
+            <div class="p-8">
+                <!-- Название и описание блюда -->
+                <h1 class="text-3xl font-bold text-gray-800 mb-4">Паста с курицей</h1>
+                <p class="text-gray-600 mb-6">Нежная паста с куриной грудкой в сливочном соусе - идеальный ужин за 30 минут.</p>
+                
+                <!-- Блок с характеристиками блюда -->
+                <div class="grid grid-cols-3 gap-4 mb-8">
+                    <!-- Сетка из 3 колонок с равными отступами -->
+                    <div class="text-center p-4 bg-gray-50 rounded">
+                        <p class="font-bold">Время приготовления</p>
+                        <p>30 минут</p>
+                    </div>
+                    <div class="text-center p-4 bg-gray-50 rounded">
+                        <p class="font-bold">Порции</p>
+                        <p>4 порции</p>
+                    </div>
+                    <div class="text-center p-4 bg-gray-50 rounded">
+                        <p class="font-bold">Сложность</p>
+                        <p>Легкая</p>
+                    </div>
+                </div>
+
+                <!-- Список ингредиентов -->
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Ингредиенты</h2>
+                    <ul class="list-disc pl-5 text-gray-700">
+                        <li>300 г пасты (пенне или феттучини)</li>
+                        <li>300 г куриного филе</li>
+                        <li>200 мл сливок 20%</li>
+                        <li>1 луковица</li>
+                        <li>2 зубчика чеснока</li>
+                        <li>50 г пармезана</li>
+                        <li>2 ст.л. оливкового масла</li>
+                        <li>Соль, перец, итальянские травы</li>
+                    </ul>
+                </div>
+
+                <!-- Этапы приготовления -->
+                <div>
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Приготовление</h2>
+                    <ol class="list-decimal pl-5 text-gray-700">
+                        <li class="mb-2">Пасту отварить в подсоленной воде до al dente.</li>
+                        <li class="mb-2">Курицу нарезать кубиками, обжарить до золотистой корочки.</li>
+                        <li class="mb-2">Добавить мелко нарезанный лук и чеснок, обжарить 2 минуты.</li>
+                        <li class="mb-2">Влить сливки, добавить специи, тушить 5 минут.</li>
+                        <li class="mb-2">Смешать пасту с соусом, посыпать тертым пармезаном.</li>
+                    </ol>
+                </div>
+
+            </div>
+        </div>
+    </main>
+</body>
+</html>
